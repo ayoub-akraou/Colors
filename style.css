@@ -1,0 +1,107 @@
+html {
+  font-size: 62.5%;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: white;
+  word-spacing: 2px;
+  letter-spacing: 2px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.container {
+  max-width: 75rem;
+  margin: 0 auto;
+}
+header {
+  background-color: white;
+  box-shadow: 0 5px 1rem rgb(0, 0, 0, 0.1);
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.4rem 3.6rem;
+}
+.logo {
+  color: rgb(14, 133, 224);
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+a {
+  color: #333;
+  font-size: 1.6rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgb(0, 162, 255);
+  transition: 0.3s;
+}
+main {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  justify-content: center;
+  align-items: center;
+}
+.background {
+  background-color: #555;
+  color: #fff;
+  font-size: 3.2rem;
+  font-weight: 500;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  white-space: nowrap;
+}
+.color {
+  color: rgb(0, 162, 255);
+  letter-spacing: inherit;
+}
+button {
+  outline: none;
+  background-color: initial;
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #333;
+  padding: 1rem 2rem;
+  border: 2px solid #333;
+  border-radius: 5px;
+  word-spacing: inherit;
+  letter-spacing: inherit;
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgb(0, 0, 0, 0.2);
+}
+button:hover {
+  background-color: #333;
+  color: #fff;
+  transition: 0.3s;
+}
+button:active {
+  transform: translateY(3px);
+  transition: 0.2s;
+}
+@media (max-width: 700px) {
+  html {
+    font-size: 56%;
+  }
+  .background {
+    font-size: 2.6rem;
+  }
+}
+@media (max-width: 510px) {
+  .background {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 400px) {
+  .background {
+    font-size: 1.4rem;
+    padding: 1rem;
+    border-radius: 4px;
+  }
+}
